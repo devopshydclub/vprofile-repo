@@ -60,15 +60,15 @@ pipeline {
             }
         }
 
-        stages {
-          stage('Building image') {
+
+        stage('Building image') {
             steps{
               script {
                 docker.build registry + ":$BUILD_NUMBER"
               }
             }
-          }
         }
+        
         stage('CODE ANALYSIS with SONARQUBE') {
 
             environment {
