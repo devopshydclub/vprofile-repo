@@ -43,3 +43,4 @@ wget https://raw.githubusercontent.com/devopshydclub/vprofile-repo/master/contex
 cp tomcat-users.xml /usr/local/tomcat8/conf/tomcat-users.xml
 cp context.xml /usr/local/tomcat8/webapps/manager/META-INF/
 systemctl restart tomcat
+echo "Done"
