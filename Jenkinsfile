@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('fetch code') {
           steps{
-              git branch: 'vp-rem', url:'https://github.com/devopshydclub/vprofile-repo.git&#39;
+              git branch: 'vp-rem', url: "https://github.com/devopshydclub/vprofile-repo.git"
           }  
         }
 
@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Test'){
             steps {
-                sh 'mvn tests'
+                sh 'mvn test'
             }
 
         }
