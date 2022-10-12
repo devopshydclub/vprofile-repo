@@ -166,6 +166,7 @@
 		</dependency>
     </dependencies>
      <build>
+	     <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
