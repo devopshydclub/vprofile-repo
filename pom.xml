@@ -82,7 +82,14 @@
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
         </dependency>
-
+	    
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.12.4</version>
+            <type>maven-plugin</type>
+        </dependency>
+	    
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
