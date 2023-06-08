@@ -4,7 +4,7 @@
     <groupId>com.visualpathit</groupId>
     <artifactId>vprofile</artifactId>
     <packaging>war</packaging>
-    <version>v1</version>
+    <version>v3</version>
     <name>Visualpathit VProfile Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
@@ -98,7 +98,7 @@
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-test</artifactId>
-		    <version>3.2.3.RELEASE</version>
+		    <version>4.2.4.RELEASE</version>
 		    <scope>test</scope>
 		</dependency>
 		<dependency>
