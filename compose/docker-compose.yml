@@ -4,7 +4,7 @@ services:
     build:
       Context: /root/vprofile-repo/Docker-web
     image: krish1739/vprofileweb
-    conatiner_name: vproweb
+    container_name: vproweb
     ports:
       - "80:80"
 
@@ -12,7 +12,7 @@ services:
     build:
       Context: /root/vprofile-repo/Docker-app
     image: krish1739/vprofileapp
-    conatiner_name: vproapp
+    container_name: vproapp
     ports:
       - "8080:8080"
     volumes:
@@ -35,7 +35,7 @@ services:
     build:
       Context: /root/vprofile-repo/Docker-db
     image: krish1739/vprofiledb
-    conatiner_name: vprodb
+    container_name: vprodb
     ports:
       - "3306:3306"
     volumes:
