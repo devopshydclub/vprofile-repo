@@ -1,14 +1,14 @@
 version: '3'
 services:
   vpronginx:
-    Context: /root/vprofile-repo/Docker-web
+    build: /root/vprofile-repo/Docker-web
     image: krish1739/vprofileweb
     container_name: vproweb
     ports:
       - "80:80"
 
   vproapp:
-      Context: /root/vprofile-repo/Docker-app
+      build: /root/vprofile-repo/Docker-app
     image: krish1739/vprofileapp
     container_name: vproapp
     ports:
@@ -30,7 +30,7 @@ services:
       - RABBITMQ_DEFAULT_PASS=guest
 
   vprodb:
-      Context: /root/vprofile-repo/Docker-db
+      build: /root/vprofile-repo/Docker-db
     image: krish1739/vprofiledb
     container_name: vprodb
     ports:
