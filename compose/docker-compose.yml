@@ -1,14 +1,22 @@
 version: '3'
 services:
   vpronginx:
-    image: visualpath/vpronginx
+    build:
+      Context: /root/vprofile-repo/Docker-web
+    image: krish1739/vprofileweb
+    conatiner_name: vproweb
     ports:
       - "80:80"
 
   vproapp:
-    image: imranvisualpath/vproappfix
+    build:
+      Context: /root/vprofile-repo/Docker-app
+    image: krish1739/vprofileapp
+    conatiner_name: vproapp
     ports:
       - "8080:8080"
+    volumes:
+      - vproappdata:/usr/local/tomcat/webapps
 
   vprocache01:
     image: memcached
@@ -24,7 +32,10 @@ services:
       - RABBITMQ_DEFAULT_PASS=guest
 
   vprodb:
-    image: imranvisualpath/vprdbfix
+    build:
+      Context: /root/vprofile-repo/Docker-db
+    image: krish1739/vprofiledb
+    conatiner_name: vprodb
     ports:
       - "3306:3306"
     volumes:
