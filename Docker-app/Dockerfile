@@ -1,4 +1,6 @@
 FROM tomcat:8-jre11
+LABEL "PROJECT" = "VPROFILE"
+LABEL "AUTHOR"= "KRISHNA"
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
